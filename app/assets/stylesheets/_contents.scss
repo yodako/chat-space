@@ -8,3 +8,9 @@
   float: left;
   position: fixed;
 }
+.main {
+  background-color: #AAAAAA;
+  height: 100%;
+  width: calc(100% - 300px);
+  float: right;
+}
