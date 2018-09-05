@@ -1,21 +1,23 @@
   .main-messages {
-    background-color: #AAAAAA;
+    background-color: #FFFFFF;
     padding: 106px 40px;
     #message-user {
         font-size: 16px;
         font-weight: bold;
         color: #434A54;
         padding: 40px 0 0;
+        float: left;
     }
     #message-date {
         font-size: 12px;
         color: #999999;
-        padding: 0 10px 0;
+        padding: 40px 10px 0;
         float: left;
     }
     #message-text {
         font-size: 14px;
         color: #434A54;
         padding: 10px 0 0;
+        clear: both;
     }
   }
