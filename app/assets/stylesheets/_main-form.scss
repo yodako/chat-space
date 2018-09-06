@@ -1,8 +1,25 @@
-  .main-form {
+.main-form {
     background-color: #AAAAAA;
     width: 100%;
-    height: 50px;
-    padding: 20px 0 40px;
+    padding: 20px 0;
     position: fixed;
     bottom: 0;
-  }
+    &__box {
+        width: 100%;
+        height: 50px;
+        &__message {
+          width: 300px;
+        inpuit{
+          width: 100%;
+        }
+        }
+        &__imgfile {
+            width: 100%;
+        }
+        &__send {
+          width: 100%;
+          height: 50px;
+        }
+    }
+}
+

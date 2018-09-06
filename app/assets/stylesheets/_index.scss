@@ -1,12 +1,12 @@
 .aside {
-  width: 300px;
-  height: 100%;
-  float: left;
-  position: fixed;
+    width: 300px;
+    height: 100%;
+    float: left;
+    position: fixed;
 }
 .main {
-  background-color: #AAAAAA;
-  height: 100vh;
-  width: calc(100% - 300px);
-  float: right;
+    background-color: #AAAAAA;
+    height: 100vh;
+    width: calc(100% - 300px);
+    float: right;
 }

@@ -1,7 +1,8 @@
 %div.main-form
-  %main-form__message
-    %input{:placeholde => "type a message"}/
-  %main-form__imgfile
-    %input{:type => "file"}/
-  %main-form__send
-    %input{:type => "submit", :value => "Send"}/
+  %div.main-form__box
+    -# %main-form__message
+      %input{placeholder: "type a message"}/
+    %main-form__imgfile
+      %input{type: "file", id: "filesend"}/
+    %main-form__send
+      %input{type: "submit", value: "Send", id: "submit"}/
