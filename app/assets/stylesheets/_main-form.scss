@@ -1,35 +1,22 @@
 .main-form {
     background-color: #AAAAAA;
-    width: 100%;
-    padding: 20px 40px;
+    width: calc(100% - 380px);
+    padding: 40px;
     position: fixed;
     bottom: 0;
     &__box {
-        position: relative;
         width: 100%;
         height: 50px;
         &--message {
-          position: absolute;
-          width: 100%;
-          float: left;
+            width: 500px;
+            float: left;
             inpuit{
-              width: 100%;
-            }
-        }
-        &--imgfile {
-            position: absolute;
-            width: 50px;
-            float: right;
-            inpuit{
-                background-color: #38AEF0;
-                height: 40px;
-                border: solid #38AEF0;
-                color: #FFFFFF;
-                padding: 0 20px;
+            width: 500px;
+            height: 50px;
             }
         }
         &--send {
-            width: 500px;
+            width: 400px;
             height: 50px;
             float: right;
             input {
@@ -38,8 +25,22 @@
                 border: solid #38AEF0;
                 color: #FFFFFF;
                 padding: 0 20px;
+            }
         }
-      }
+        &--imgfile {
+            width: 50px;
+            float: right;
+            position: relative;
+            inpuit{
+                background-color: #38AEF0;
+                height: 40px;
+                border: solid #38AEF0;
+                color: #FFFFFF;
+                padding: 0 20px;
+                position: absolute;
+                right: 0;
+            }
+        }
     }
 }
 
