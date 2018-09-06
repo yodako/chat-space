@@ -16,5 +16,9 @@
     }
     &__icon {
         float: right;
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
+        }
     }
 }

@@ -2,8 +2,11 @@
   %div.main-form__box
     %div.main-form__box--message
       %input{placeholder: "type a message"}/
-    %div.main-form__box--imgfile
-      -# %input{type: "file", id: "filesend"}/
-      %i.fa.fa-image
     %div.main-form__box--send
       %input{type: "submit", value: "Send"}/
+    %div.main-form__box--imgfile
+      %label
+        %span.filelabel{:title => "ファイルを選択"}
+        %i.fa.fa-image
+        %input#filesend{:name => "datafile", :type => "file"}/
+
