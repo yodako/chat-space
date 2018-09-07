@@ -1,16 +1,16 @@
 .aside-group {
-    background-color: #2f3e51;
+    background-color: $navy2;
     width: 260px;
     height: 100%;
     padding: 0 20px;
     #aside-group--name {
         font-size: 15px;
-        color: #FFFFFF;
+        color: $white;
         padding: 20px 0 0;
     }
     #aside-group--message {
         font-size: 11px;
-        color: #FFFFFF;
+        color: $white;
         padding: 5px 0 20px;
     }
 }
