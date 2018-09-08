@@ -1,0 +1,39 @@
+.main-group {
+    background-color: $white;
+    width: calc(100% - 380px);
+    height: 100px;
+    padding: 0 40px;
+    font-size: 16px;
+    font-weight: bold;
+    position: fixed;
+    border-bottom: medium solid $lightGray;
+    &__box {
+        &--groupname {
+            float: left;
+            #top-group {
+                font-size: 20px;
+                color: $black;
+                padding: 35px 0 0;
+            }
+            #top-members {
+                font-size: 12px;
+                color: $darkGray;
+                padding: 15px 0 0;
+            }
+        }
+        &--edit {
+            height: 40px;
+            padding: 28px 0;
+            float: right;
+            float: right;
+            right: 0;
+            input {
+                background-color: $white;
+                height: 40px;
+                border: solid $lightBlue;
+                color: $lightBlue;
+                padding: 0 20px;
+            }
+        }
+    }
+}
