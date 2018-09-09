@@ -3,12 +3,12 @@
     width: 260px;
     height: 100%;
     padding: 0 20px;
-    #aside-group--name {
+    &__name {
         font-size: 15px;
-        color: $white;
+        color: #FFFFFF;
         padding: 20px 0 0;
     }
-    #aside-group--message {
+    &__message {
         font-size: 11px;
         color: $white;
         padding: 5px 0 20px;

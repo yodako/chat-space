@@ -2,7 +2,7 @@
   %div.aside-user__name
     = current_user.name
   %div.aside-user__link
-    = link_to do
+    = link_to new_group_path do
       = fa_icon 'pencil-square-o', class: 'aside-user__link--icon'
     = link_to edit_user_path(current_user) do
       = fa_icon 'cog', class: 'aside-user__link--icon'
