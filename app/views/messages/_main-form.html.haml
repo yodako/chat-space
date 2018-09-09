@@ -1,25 +1,10 @@
-%div.main-form
-  %div.main-form__box
-    %div.main-form__box--message
-      %input{placeholder: "type a message"}/
-    %div.main-form__box--send
-      %input{type: "submit", value: "Send"}/
-    %div.main-form__box--imgfile
-      %label
-        %span.filelabel{:title => "ファイルを選択"}
-        %i.fa.fa-image
-        %input#filesend{:name => "datafile", :type => "file"}/
+.main-form
+  .main-form__box
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'main-form__box--text', placeholder: 'type a message'
+      .main-form__box--mask
+        = f.label :image do
+          = fa_icon 'picture-o', class: 'icon'
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'main-form__box--send'
 
-
--# %div.main-form
--#   %div.main-form__box
--#     %div.main-form__box--message
--#       = form_for [@group, @message] do |f|
--#         = f.text_field :content, class: 'main-form__box--message', placeholder: 'type a message'
--#     %div.main-form__box--send
--#       %input{type: "submit", value: "Send"}/
--#     %div.main-form__box--imgfile
--#       %label
--#         %span.filelabel{:title => "ファイルを選択"}
--#         %i.fa.fa-image
--#         %input#filesend{:name => "datafile", :type => "file"}/

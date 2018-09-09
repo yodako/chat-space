@@ -1,4 +1,4 @@
-%div.aside-group
+.aside-group
   - current_user.groups.each do |group|
     = link_to group_messages_path(group) do
       .aside-group__name
