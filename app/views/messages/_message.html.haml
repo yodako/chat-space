@@ -1,4 +1,10 @@
-.main-messages__message
-    #message-user user name
-    #message-date 2018/09/05 16:58:00
-    #message-text message
+.main-messages
+  .main-messages__message
+    .main-messages__message--name
+      = message.user.name
+    .main-messages__message--date
+      -# = format_posted_time(message.created_at)
+    .main-messages__message--meesage
+      - if message.content.present?
+        = message.content
+      -# = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
