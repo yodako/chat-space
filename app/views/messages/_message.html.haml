@@ -1,10 +1,10 @@
-.main-messages
-  .main-messages__message
-    .main-messages__message--name
-      = message.user.name
-    .main-messages__message--date
-      -# = format_posted_time(message.created_at)
-    .main-messages__message--meesage
-      - if message.content.present?
-        = message.content
-      -# = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
+.main-messages__upper
+  .main-messages__upper--name
+    = message.user.name
+  .main-messages__upper--date
+    = message.created_at
+.main-messages__lower
+  .main-messages__lower--meesage
+    - if message.content.present?
+      = message.content
+    -# = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
