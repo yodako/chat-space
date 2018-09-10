@@ -14,9 +14,9 @@
         color: $white;
         float: left;
     }
-    &__icon {
+    &__link {
         float: right;
-        a {
+        &--icon {
             color: $white;
             text-decoration: none;
         }

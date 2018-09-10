@@ -1,25 +1,31 @@
 .main-messages {
     background-color: $white;
+    height: 100%;
     padding: 106px 40px 0;
-    &__message {
-        #message-user {
+    &__upper {
+        &--name {
             font-size: 16px;
             font-weight: bold;
             color: $navy3;
             padding: 40px 0 0;
             float: left;
         }
-        #message-date {
+        &--date {
             font-size: 12px;
             color: $darkGray;
             padding: 40px 10px 0;
             float: left;
         }
-        #message-text {
+    }
+    &__lower {
+        clear: both;
+        &--message {
             font-size: 14px;
             color: $navy3;
             padding: 10px 0 0;
-            clear: both;
         }
+        // &--image {
+
+        // }
     }
 }

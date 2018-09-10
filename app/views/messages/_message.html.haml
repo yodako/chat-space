@@ -1,4 +1,13 @@
-%div.main-messages__message
-    #message-user user name
-    #message-date 2018/09/05 16:58:00
-    #message-text message
+.main-messages__upper
+  .main-messages__upper--name
+    = message.user.name
+  .main-messages__upper--date
+    = message.created_at
+.main-messages__lower
+  .main-messages__lower--meesage
+    - if message.content.present?
+      = message.content
+  .main-messages__lower--image
+    - if message.image.present?
+      = image_tag message.image
+
