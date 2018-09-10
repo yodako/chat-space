@@ -5,6 +5,7 @@
       = @group.name
     #top-members
       Member:
-      -# = @group[:user_id]
+      - @group.group_users.each do |group_user|
+        = group_user.user.name
   .main-group__box--edit
     %input{type: "button", value: "Edit"}/
