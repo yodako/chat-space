@@ -1,7 +1,10 @@
 .main-group
   .main-group__box
   .main-group__box--groupname
-    #top-group group name
-    #top-members member1 member2 member3
+    #top-group
+      = @group.name
+    #top-members
+      Member:
+      -# = @group[:user_id]
   .main-group__box--edit
     %input{type: "button", value: "Edit"}/
