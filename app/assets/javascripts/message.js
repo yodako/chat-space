@@ -36,6 +36,7 @@ $(function(){
       $('.main-messages').append(html);
       $('#new_message').val('');
       $("#new_message")[0].reset();
+      $('html,body').animate({scrollTop: 10000}, 'swing');
     })
     .fail(function(){
       alert('error');
