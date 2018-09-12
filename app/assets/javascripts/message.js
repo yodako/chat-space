@@ -13,9 +13,7 @@ $(function(){
       <div class="main-messages__lower--meesage">
           ${message.content}
       </div>
-      <div class="main-messages__lower--image">
-      </div>
-    </div>`
+      `
     return html;
   }
 
@@ -34,9 +32,12 @@ $(function(){
     .done(function(data){
       var html = buildHTML(data);
       $('.main-messages').append(html);
+      if (data.image.url != null){
+        $('.main-messages').append(`<img src = '${data.image.url}' width="200">`)
+      }
       $('#new_message').val('');
       $("#new_message")[0].reset();
-      $('html,body').animate({scrollTop: 10000}, 'swing');
+      $('html,body').animate({scrollTop: 999999999999}, 'swing');
     })
     .fail(function(){
       alert('error');
