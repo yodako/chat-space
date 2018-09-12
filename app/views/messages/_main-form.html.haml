@@ -1,10 +1,10 @@
 .main-form
   .main-form__box
-    = form_for [@group, @message] do |f|
+    = form_for [@group, @message], id: "new_message" do |f|
       = f.text_field :content, class: 'main-form__box--text', placeholder: 'type a message'
       .main-form__box--mask
         = f.label :image do
           = fa_icon 'picture-o', class: 'icon'
           = f.file_field :image, class: 'hidden'
-      = f.submit 'Send', class: 'main-form__box--send'
+      = f.submit 'Send', class: 'main-form__box--send', "data-disable-with": "送信"
 
