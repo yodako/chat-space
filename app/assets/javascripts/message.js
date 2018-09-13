@@ -18,10 +18,10 @@ $(function(){
   }
 
   $('#new_message').on('submit', function(e){
-    if($('.main-form__box--text').val() == '') {
-      alert('メッセージを入れて！');
-      return false;
-    }
+    // if($('.main-form__box--text').val() == '') {
+    //   alert('メッセージを入れて！');
+    //   return false;
+    // }
     e.preventDefault();
     var formData = new FormData($(this).get(0));
     var url = $(this).attr('action')
@@ -41,7 +41,7 @@ $(function(){
       }
       $('#new_message').val('');
       $("#new_message")[0].reset();
-      $('html,body').animate({scrollTop: 999999999999}, 'swing');
+      $('html,body').animate({scrollTop: $('.main-messages')[0].scrollHeight}, 'slow');
     })
     .fail(function(){
       alert('error');
