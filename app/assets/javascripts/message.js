@@ -18,10 +18,6 @@ $(function(){
   }
 
   $('#new_message').on('submit', function(e){
-    // if($('.main-form__box--text').val() == '') {
-    //   alert('メッセージを入れて！');
-    //   return false;
-    // }
     e.preventDefault();
     var formData = new FormData($(this).get(0));
     var url = $(this).attr('action')
