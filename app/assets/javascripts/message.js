@@ -13,7 +13,7 @@ $(function(){
       <div class="main-messages__lower--meesage">
           ${message.content}
       </div>
-      `
+    </div>`
     return html;
   }
 
