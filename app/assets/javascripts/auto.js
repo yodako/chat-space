@@ -23,7 +23,6 @@ $(function(){
 
   function update(){
     var message_id = $('.main-messages__upper:last').data('message-id');
-    console.log(message_id)
     $.ajax({
       url: location.href,
       type: 'GET',
@@ -34,18 +33,11 @@ $(function(){
     })
 
     .done(function(data) {
-      var insertHTML = '';
-      data.messages.forEach(function(message) {
-        if (message.id > id ) {
-          insertHTML += buildHTML(message);
-        }
+      data.forEach(function(message) {
+        var html = buildHTML(message);
+        $('.main-messages').append(html);
+        $('html,body').animate({scrollTop: $('.main-messages')[0].scrollHeight}, 'slow');
       });
-      $('.main-messages').append(insertHTML);
-      $('html,body').animate({scrollTop: $('.main-messages')[0].scrollHeight}, 'slow');
     })
-    .fail(function(data) {
-      alert('自動更新に失敗しました');
-    });
   }
 });
-ß
