@@ -2,7 +2,7 @@
   .main-messages__upper--name
     = message.user.name
   .main-messages__upper--date
-    = message.created_at.to_formatted_s(:datetime)
+    = simple_time(message.created_at)
 .main-messages__lower
   .main-messages__lower--meesage
     - if message.content.present?

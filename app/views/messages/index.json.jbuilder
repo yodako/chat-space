@@ -4,6 +4,6 @@ if @new_messages.present?
     json.image message.image
     json.name message.user.name
     json.id message.id
-    json.created_at message.created_at.to_formatted_s(:datetime)
+    json.created_at simple_time(message.created_at)
   end
 end
